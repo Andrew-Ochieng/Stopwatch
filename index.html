@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center">
+    <div class="container text-center flex flex-col justify-center bg-gray-200 rounded-2xl mx-72 my-32 py-8">
+        <h2 class="text-center text-6xl font-bold text-gray-700">Stopwatch</h2>
+        <div class="my-8">
+            <!--timer-->
+            <div class="font-bold text-blue-500 text-6xl my-16" id="stopwatch">00 : 00 : 00</div>
+
+            <div class="flex gap-8 text-center flex justify-center">
+                <button onclick="startWatch(true)" class="bg-green-400 hover:bg-green-600 shadow-lg hover:shadow-xl px-8 py-4 rounded-lg border-none" id="start">Start</button>
+                <button onclick="pauseWatch()" class="bg-red-400 hover:bg-red-600 shadow-lg hover:shadow-xl px-8 py-4 rounded-lg border-none" id="pause">Pause</button>
+                <button onclick="resetWatch()" class="bg-blue-400 hover:bg-blue-600 shadow-lg hover:shadow-xl px-8 py-4 rounded-lg border-none" id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
